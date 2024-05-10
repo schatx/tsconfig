@@ -2,7 +2,7 @@
 
 TSConfig for schatx to extend.
 
-Require Typescript >= 5.0.
+Require `Typescript >= 5.0`. `Node -> NodeNext`. `ECMAScript -> ESNext`
 
 ## Installation
 
@@ -23,6 +23,20 @@ Add one of avaiable conifgurations to your `tsconfig.json`:
 
 ```json
 "extends": "@schatx/tsconfig/tsconfig.dom.json"
+```
+
+### Configuration for Node Environments
+
+First install the types for the Node.js version you are targeting, for example:
+
+```shell
+npm install @types/node --save-dev
+```
+
+and you may not need to extend the Vue TSConfig:
+
+```json
+"extends": "@schatx/tsconfig/tsconfig.node.json"
 ```
 
 ## Emitting Declaration Files
