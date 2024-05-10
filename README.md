@@ -33,7 +33,7 @@ First install the types for the Node.js version you are targeting, for example:
 npm install @types/node --save-dev
 ```
 
-and you may not need to extend the Vue TSConfig:
+and you need to extend the TSConfig:
 
 ```json
 "extends": "@schatx/tsconfig/tsconfig.node.json"
